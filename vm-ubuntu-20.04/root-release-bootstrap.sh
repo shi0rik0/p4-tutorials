@@ -5,6 +5,9 @@ set -xe
 
 export DEBIAN_FRONTEND=noninteractive
 
+# Use SJTU's mirror
+sed -i 's/http:\/\/in.archive.ubuntu.com/https:\/\/mirror.sjtu.edu.cn/g' /etc/apt/sources.list
+
 # Atom install steps came from this page on 2020-May-11:
 # https://flight-manual.atom.io/getting-started/sections/installing-atom/#platform-linux
 
